@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../private/login_core.php');
+require('private/login_core.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  // Simple login sans base de données
@@ -44,5 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <a href="./index.php">&#8618; Retour à la page d'accueil</a>
  </div>
 </body>
+
 
 </html>
