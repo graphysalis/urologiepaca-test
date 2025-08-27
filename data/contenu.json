@@ -1,0 +1,27 @@
+{
+    "index": {
+        "carouselImg1_img": "<img id=\"img1\" src=\".\/assets\/images\/slider\/cabinetPastorelli.webp\" alt=\"Cabinet Pastorelli\" \/>",
+        "carouselImg2_img": "<img id=\"img2\" src=\".\/assets\/images\/slider\/cliniqueSaintGeorge.webp\" alt=\"Clinique Saint George\" \/>",
+        "carouselImg3_img": "<img id=\"img3\" src=\".\/assets\/images\/slider\/cliniqueSaintAntoine.webp\" alt=\"Clinique Saint Antoine\" \/>",
+        "carouselImg4_img": "<img id=\"img4\" src=\".\/assets\/images\/slider\/polycliniqueSantaMaria.webp\" alt=\"Polyclinique Santa Maria\" \/>",
+        "carouselCaption1_pTxt": "<p>Cabinet Pastorelli<br \/>38 Rue Pastorelli<br \/>06000 Nice<\/p>",
+        "carouselCaption2_pTxt": "<p>Clinique Saint George<br \/>2 Avenue de Rimiez<br \/>06100 Nice<\/p>",
+        "carouselCaption3_pTxt": "<p>Clinique Saint Antoine<br>KANTYS<br \/>7 Avenue Durante<br \/>06000 Nice<\/p>",
+        "carouselCaption4_pTxt": "<p>Polyclinique Santa Maria<br \/>57 Avenue de la Californie<br \/>06200 Nice<\/p>",
+        "accueil_section1_h1": "<h1>Bienvenue sur le site du Docteur Stefan Jeglinschi<\/h1>",
+        "accueil_section1_p": "<p>Le Docteur Stefan Jeglinschi est un expert en <a href=\".\/expertise.php\"><em><span style=\"color: rgb(15, 75, 115)\"><strong>chirurgie urologique<\/strong><\/span><\/em><\/a>, offrant des soins médicaux de haute qualité aux patients de la région de Nice. Fort d'une vaste expérience acquise dans des centres hospitaliers renommés en France, il propose des solutions personnalisées pour le traitement des pathologies urologiques, y compris les cancers, les troubles urinaires, ainsi que les interventions chirurgicales avancées comme la <a href=\".\/robotique.php\"><em><span style=\"color: rgb(15, 75, 115)\"><strong>chirurgie robotique<\/strong><\/span><\/em><\/a>. Sur ce site, vous trouverez des informations sur ses <a href=\".\/expertise.php\"><span style=\"color: rgb(15, 75, 115)\"><em><strong>compétences<\/strong><\/em><\/span><\/a>, ses <a href=\".\/contact.php\"><em><span style=\"color: rgb(15, 75, 115)\"><strong>actes médicaux<\/strong><\/span><\/em><\/a>, ses <a href=\".\/contact.php\"><em><span style=\"color: rgb(15, 75, 115)\"><strong>lieux d'intervention<\/strong><\/span><\/em><\/a>, ainsi que ses <a href=\".\/travaux.php\"><span style=\"color: rgb(15, 75, 115)\"><em><strong>publications scientifiques<\/strong><\/em><\/span><\/a> qui témoignent de son expertise et de son engagement dans l'évolution de la chirurgie urologique.<\/p>",
+        "accueil_section1_img": "<img src=\".\/assets\/images\/portrait01.webp\" alt=\"Dr Jeglinschi\">",
+        "accueil_section2_h2": "",
+        "accueil_section2_p": "",
+        "accueil_section2_img": "",
+        "accueil_section3_h2": "",
+        "accueil_section3_p": "",
+        "accueil_section3_img": "",
+        "accueil_section4_h2": "",
+        "accueil_section4_p": "",
+        "accueil_section4_img": "",
+        "contactTel_link": "04 93 62 38 89",
+        "doctoLibLink_link": "https:\/\/www.doctolib.fr\/chirurgien-urologue\/nice\/stefan-jeglinschi",
+        "googleMap_link": "https:\/\/maps.app.goo.gl\/tjM5qgtuAGu9dgaC8"
+    }
+}
