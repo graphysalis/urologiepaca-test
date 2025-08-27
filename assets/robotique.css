@@ -1,0 +1,69 @@
+.robo {
+  display: block;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.sectionContent {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color0);
+}
+
+.roboImage {
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  background-image: url("./images/Laproscopic_Surgery_Robot.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.textContainer {
+  width: 60%;
+  padding: 0 20px;
+  height: fit-content;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.textContainer h2 {
+  margin-top: 30px;
+}
+
+.textContainer p {
+  padding: 10px 0;
+}
+
+.sectionText {
+  width: 100%;
+  padding: 0 20px;
+  background-color: var(--color0);
+  margin-bottom: 30px;
+}
+
+.sectionText h2 {
+  margin-top: 30px;
+}
+
+.sectionText p,
+.sectionText ul li {
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .sectionContent {
+    display: block;
+  }
+  .roboImage {
+    width: 100%;
+    height: 400px;
+  }
+
+  .textContainer {
+    width: 100%;
+  }
+}

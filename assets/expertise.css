@@ -1,0 +1,27 @@
+.exp {
+  display: block;
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: var(--color0);
+}
+
+.exp .textContainer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: justify;
+  padding: 20px;
+}
+
+.exp .textContainer ul {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 40px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 30px;
+  text-decoration: underline;
+}

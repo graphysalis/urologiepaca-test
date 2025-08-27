@@ -1,0 +1,70 @@
+/*** accueil section3 :adminMode, ou hors admin si contenu***/
+#sectionsContainer {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.section3 {
+  display: block;
+  width: 90vw;
+  margin: 150px auto 0;
+  height: fit-content;
+}
+
+.mainTitleContainer {
+  width: 100%;
+  height: fit-content;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5rem !important;
+  width: 80%;
+  padding-left: 10px;
+  text-align: left;
+  margin: auto;
+  color: var(--color1);
+  background-color: var(--color0);
+  text-transform: uppercase;
+  text-decoration: overline;
+}
+
+.section3Content {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.section3ImgContainer,
+.section3TextContainer {
+  height: fit-content;
+  background-color: var(--color0);
+}
+
+.section3ImgContainer {
+  width: 35%;
+}
+
+.section3TextContainer {
+  width: 65%;
+}
+
+.section3Illustration img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section3Paragraphe {
+  margin: auto;
+  padding: 20px 60px;
+}
+
+.section3Paragraphe p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}

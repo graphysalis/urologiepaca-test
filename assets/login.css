@@ -1,0 +1,90 @@
+:root {
+  --color0: rgb(243, 243, 243);
+  --color1: rgb(15, 75, 115);
+  --color1T: rgb(15, 75, 115, 0.8);
+  --color2: rgb(8, 54, 84);
+  --color3: rgb(185, 185, 185);
+  --color4: #17a2b8;
+  --color5: #117a8b;
+  --color6: #28a745;
+  --color7: #1e7e34;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color1T);
+}
+
+h1 {
+  width: fit-content;
+  margin: 50px auto;
+  font-size: 1.5rem;
+  color: var(--color0);
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin: 0 auto 10px;
+  background-color: var(--color0);
+  width: fit-content;
+  padding: 3px;
+}
+
+form {
+  width: 320px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--color3);
+  margin: auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--color5);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--color5);
+}
+
+.backToSite {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.backToSite a {
+  color: var(--color0);
+}
+
+@media screen and (max-width: 380px) {
+  form {
+    width: 250px;
+    padding: 10px;
+  }
+}

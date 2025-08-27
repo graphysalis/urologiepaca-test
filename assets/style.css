@@ -1,0 +1,526 @@
+:root {
+  --color0: #f3f3f3;
+  --color1: #0f4b73;
+  --color1T: #0f4b73cc;
+  --color2: #083654;
+  --color3: #b9b9b9;
+  --color4: #17a2b8;
+  --color5: #117a8b;
+  --color6: #28a745;
+  --color7: #1e7e34;
+  --gradient0: linear-gradient(
+    90deg,
+    transparent 10%,
+    rgb(185, 185, 185) 50%,
+    transparent 90%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+  background-image: url("./images/bg01.webp");
+  background-position-x: 70%;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titre {
+  color: var(--color1);
+}
+
+.titre::before {
+  content: "\2666";
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+.description {
+  display: block;
+}
+
+.headerBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--color1T);
+  z-index: -100;
+}
+
+header {
+  width: 90vw;
+}
+
+.headerTop {
+  width: fit-content;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.logoDrName {
+  display: flex;
+  width: fit-content;
+}
+
+.logoStem {
+  width: 80px;
+  height: 80px;
+  background-image: url("./images/logoStem.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.logoKidney {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/logoKidney.png");
+  background-position: center;
+  background-size: cover;
+  animation: moveLogo 4s 1s ease-in-out infinite;
+}
+
+.DrName {
+  font-weight: 300;
+  font-size: 2rem;
+  padding-top: 20px;
+  color: var(--color0);
+}
+
+.letter {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.logoDrName .contactUs {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.logoDrName .contactUs .btn {
+  padding: 8px 10px;
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.speciality {
+  width: fit-content;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 10px 0 0 80px;
+  color: var(--color1);
+}
+
+.headerNavBg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--color0);
+  box-shadow: inset 0px 0px 5px var(--color2);
+  z-index: 4000;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  background-image: url("./images/logo01blue.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 2rem;
+  color: var(--color1);
+  padding-top: 10px;
+}
+
+.headerNav {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  z-index: 4000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding-right: 25px;
+  padding-top: 15px;
+}
+
+.navUlDisplay {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  background-color: var(--color0);
+  border: 1px solid var(--color3);
+  z-index: 3000;
+}
+
+nav ul li {
+  padding-left: 20px;
+}
+
+nav ul li a {
+  padding: 5px;
+}
+
+nav ul li:hover a {
+  border-bottom: 1px solid var(--color1);
+  text-decoration: none;
+}
+
+.menu-link {
+  color: var(--color1);
+  font-weight: 300;
+  font-size: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+
+.menu-link.active {
+  color: var(--color1);
+  border-bottom: 1px solid var(--color1);
+  font-weight: bold;
+}
+
+/*******Button Menu***********/
+.btnMenu {
+  display: none;
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btnMenuItem {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color1);
+  transition: 0.6s all ease-in-out;
+}
+
+.btnMenuTxt {
+  position: absolute;
+  left: -50px;
+  top: 25%;
+  font-size: 1rem;
+  color: var(--color1);
+}
+
+.it1 {
+  top: 10px;
+}
+.it2 {
+  top: 50%;
+}
+.it3 {
+  bottom: 8px;
+}
+
+.rotateRight {
+  transform: rotateZ(135deg);
+  left: 3px;
+  top: 45%;
+}
+.rotateLeft {
+  transform: rotateZ(-135deg);
+  left: 3px;
+  top: 45%;
+}
+
+.removeIt2 {
+  transform: rotateZ(-180deg);
+  left: -43px;
+  top: 80%;
+}
+
+/*** accueil section1 ***/
+#sectionsContainer {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.section1 {
+  display: block;
+  width: 90vw;
+  margin: 150px auto 0;
+  height: fit-content;
+}
+
+.mainTitleContainer {
+  width: 100%;
+  height: fit-content;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: var(--color1T);
+  font-size: 2rem !important;
+  color: var(--color0);
+  width: 100%;
+}
+
+.section1Content {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.section1ImgContainer,
+.section1TextContainer {
+  height: fit-content;
+  background-color: var(--color0);
+}
+
+.section1ImgContainer {
+  width: 35%;
+}
+
+.section1TextContainer {
+  width: 65%;
+}
+
+.section1Illustration img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section1Paragraphe {
+  margin: auto;
+  padding: 20px 60px;
+}
+
+.section1Paragraphe p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+/*** map ***/
+.external-service {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: var(--color1);
+}
+
+.mapTxt {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--color0);
+}
+
+.mapLocation {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.mapLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("./images/map.webp") center/cover no-repeat;
+  cursor: pointer;
+}
+
+.external-note {
+  font-size: 0.8rem;
+  color: var(--color0);
+  text-align: justify;
+  font-style: italic;
+}
+
+/*** Footer ***/
+footer {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 30px;
+  background-color: var(--color1T);
+}
+
+.contactUs,
+.infos {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.contactUs {
+  display: flex;
+}
+
+.contactUs .btn {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactUs .btn-call {
+  background-color: var(--color6);
+}
+
+.contactUs .btn-call:hover {
+  background-color: var(--color7);
+}
+
+.contactUs .btn-doctolib,
+.contactUs .btn-rdv {
+  background-color: var(--color4);
+}
+
+.contactUs .btn-doctolib:hover,
+.contactUs .btn-rdv:hover {
+  background-color: var(--color5);
+}
+
+.infos ul {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+.infos ul li {
+  padding: 10px;
+}
+
+.infos ul li:hover {
+  text-decoration: underline white;
+}
+
+.infos ul li a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.convention {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+#adminAccess {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#adminBtn {
+  font-size: 0.8rem;
+  color: var(--color0);
+  border: 1px solid var(--color0);
+  border-radius: 25px;
+  padding: 3px 10px;
+}
+
+#adminBtn:hover {
+  text-decoration: none;
+}
+
+/*** bouton Revenir en haut de la page  ***/
+.back-to-top {
+  display: none;
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  bottom: 20px;
+  right: 20px;
+  padding-top: 4px;
+  background-color: var(--color4);
+  border-radius: 50%;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+  z-index: 8000;
+}
+
+.back-to-top svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.back-to-top:hover {
+  background-color: var(--color5);
+}
+
+.back-to-top:hover::before {
+  content: "Revenir en haut de la page";
+  position: absolute;
+  transform: translate(-100%, -50%);
+  left: -5px;
+  top: 50%;
+  width: 150px;
+  padding: 2px 5px;
+  font-size: 0.8rem;
+  color: var(--color0);
+  background-color: var(--color4);
+}
+
+/***End/ bouton Revenir en haut de la page  ***/

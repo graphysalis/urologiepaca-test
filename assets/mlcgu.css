@@ -1,0 +1,28 @@
+.mentions {
+  display: block;
+  width: 90%;
+  margin: 50px auto;
+  text-align: justify;
+  background-color: var(--color0);
+}
+
+.mentions .textContainer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 5px 50px 10px;
+}
+
+.mentions .textContainer h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.mentions .textContainer h3 {
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.mentionsContent {
+  font-weight: 300;
+  padding-left: 50px;
+}

@@ -1,0 +1,203 @@
+@media screen and (min-width: 1081px) {
+  .navUlDisplay {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .btnMenu {
+    display: block;
+    z-index: 2800;
+  }
+
+  .headerNav {
+    width: 100%;
+    height: fit-content;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    padding: 10px 0 10px 20px;
+  }
+
+  .section1TextContainer,
+  .section2TextContainer,
+  .section3TextContainer,
+  .section4TextContainer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section1Paragraphe,
+  .section2Paragraphe,
+  .section3Paragraphe,
+  .section4Paragraphe {
+    padding: 20px;
+  }
+}
+
+/*** carousel ***/
+@media screen and (max-width: 768px) {
+  .carousel {
+    height: 40vh;
+  }
+
+  .slide img {
+    height: 40vh;
+  }
+
+  .caption {
+    transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
+    font-size: 1rem;
+    left: 50%;
+    bottom: 5px;
+    padding: 5px 8px;
+  }
+
+  .external-service {
+    max-width: 400px;
+  }
+}
+/*** End carousel ***/
+
+@media screen and (max-width: 670px) {
+  .section1Content,
+  .section2Content,
+  .section3Content,
+  .section4Content {
+    display: block;
+  }
+
+  .section1ImgContainer,
+  .section1TextContainer,
+  .section2ImgContainer,
+  .section2TextContainer,
+  .section3ImgContainer,
+  .section3TextContainer,
+  .section4ImgContainer,
+  .section4TextContainer {
+    width: 80%;
+    margin: auto;
+    height: fit-content;
+  }
+
+  .section1Paragraphe,
+  .section2Paragraphe,
+  .section3Paragraphe,
+  .section4Paragraphe {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headerTop {
+    margin-left: 0;
+  }
+
+  .logoStem {
+    width: 60px;
+    height: 60px;
+  }
+
+  .DrName {
+    font-size: 1.5rem;
+    padding-top: 25px;
+  }
+
+  .speciality {
+    padding: 35px 0 0 10px;
+    font-size: 1.5rem;
+  }
+
+  .btnMenu {
+    right: 10px;
+  }
+
+  .title {
+    margin-left: 5px;
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+
+  .navUlDisplay {
+    margin-top: 50px;
+  }
+
+  footer .contactUs {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logoDrName .contactUs {
+    top: 60px;
+  }
+
+  .logoDrName .contactUs .btn {
+    padding: 5px 8px;
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .btnMenuTxt {
+    display: none;
+  }
+
+  .removeIt2 {
+    transform: rotateZ(0deg);
+    left: 0px;
+    top: 50%;
+    opacity: 0;
+  }
+
+  .external-service {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .logo {
+    margin-left: 0;
+  }
+
+  .title {
+    margin-left: 0px;
+    padding-top: 15px;
+    font-size: 1.3rem;
+  }
+
+  .mapTxt {
+    font-size: 1rem;
+  }
+
+  .external-note {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .DrName {
+    font-size: 1.2rem;
+  }
+
+  .logoStem {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btnMenuItem {
+    width: 20px;
+  }
+
+  .speciality {
+    padding: 45px 0 0 10px;
+    font-size: 1.2rem;
+  }
+}
